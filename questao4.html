@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 4</title>
+</head>
+<body>
+<script>
+    var totalCobaias=0;
+    var totalCoelhos=0;
+    var totalRatos=0;
+
+    for (var i =0;i<15;i++){
+        var valor =Number(window.prompt("Digite o valor da experiência: "))
+        var cod=Number(window.prompt("Digite o código da cobaia(1-para coelhos e 2-para ratos): "))
+
+        if (cod===1) {
+            taotalCoelhos+=valor;
+        }else if (codigo===2){
+            totalRatos+=valor;
+        }
+        totalCobaias+=valor;
+    }
+
+var percentualCoelhos=(totalCoelhos/totalCobaias)*100;
+var percentualRatos=(totalRatos/totalCobaias)*100;
+
+alert("Total de cobaias : "+totalCobaias)
+alert("total de coelhos: "+totalCoelhos)
+alert("total de ratos: "+totalRatos)
+alert("percentual de coelhos: "+percentualCoelhos.toFixed(2)+"%")
+alert("percentual de ratos: "+percentualRatos.toFixed(2)+"%")
+
+
+
+
+
+
+
+</script>    
+</body>
+</html>

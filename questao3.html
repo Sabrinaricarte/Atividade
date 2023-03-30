@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+<script>
+
+var cardapio={
+    1: 1.70,
+    2: 2.30,
+    3: 2.60,
+    4: 2.40,
+    5: 2.50,
+    6: 1.00,
+}
+ var soma=0;
+ var codigo=0;
+
+ do{
+    var codstring=Number(window.prompt("Digite o código do item(ou 0 para exit): "));
+    var cod= parseInt(codstring);
+    var quant=Number(window.prompt("Digite a quantidade do item: "));
+    
+    if (codigo !== 0 && cardapio[codigo]){
+        var preco=cardapio[codigo]*quant;
+        soma+=preco;
+    }
+
+
+ }while(codigo !==0)
+
+alert("O valor total a pagar é:  "+soma.toFixed(2));
+
+
+
+
+
+
+
+</script>    
+</body>
+</html>
